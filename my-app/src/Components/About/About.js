@@ -1,23 +1,27 @@
-import React from "react";
-import styles from "./About.module.css";
+import React from 'react';
+import Icons from './Icons';
+import './About.css';
 
-const About = () => {
- return (
-  <div className={styles.About}>
-  <h1>About</h1>
-  <h1>About</h1>
-  <h1>About</h1>
-  <h1>About</h1>
-  <h1>About</h1>
-  <h1>About</h1>
-  <h1>About</h1>
-  <h1>About</h1>
-  <h1>About</h1>
-  <h1>About</h1>
-  <h1>About</h1>
-  <h1>About</h1>
-  </div>
- )
+class Data extends React.Component {
+    render() {
+        return (
+            <>
+                <div className='about-container'>
+                    <img alt='' src='https://ilgglobal.com/Uploads/IndividualsServices/05969b944dd64d148b802c61e125facb_Notary-Services.jpeg' />
+                    <div className="text">
+                        <h1>Our Story</h1>
+                        <p className='moto'>We belive in efficiency</p>
+                        <div className='text'>
+                            Hello and welcome to Notary Office, the place to find the best Contract Validations for every type of contract.
+
+                            We at Notary Office believe in high quality and exceptional customer service. But most importantly, we believe efficiency is a right, not a luxury, so we strive to deliver the best products at the most affordable timeframes, regardless of where you are located.
+                        </div>
+                    </div>
+                </ div>
+                <Icons />
+            </>
+        );
+    }
 }
 
-export default About;
+export default Data

@@ -1,48 +1,111 @@
 /* start header  */
 .header {
-  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
 }
+
+.header {
+  /* padding-left: 15px; */
+  /* padding-right: 15px; */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+}
+
+/* Small */
+/* @media (min-width: 768px) {
+  .header {
+    width: 750px;
+  }
+} */
+
+/* Medium */
+/* @media (min-width: 992px) {
+  .header {
+    width: 967px;
+  }
+} */
+
+/* Large */
+/* @media (min-width: 1200px) {
+  .header {
+    width: 1167px;
+  }
+} */
 
 .header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
-.header .logo {
-  width: 60px;
-  height: 60px;
+.nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2c4755;
+  
+}
+
+ .logo {
+  margin-top: 4px;
+  /* margin-right: 10px; */
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
+}
+.logoSmallArea{
+    margin-top: 4px;
+      /* margin-right: 10px; */
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+}
+.logoLinks{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+/* .header .logoName {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+} */
+
+.logOut{
+  cursor: pointer;
+}
+
+.header .username {
+  font-size: 25px;
+  text-shadow: 0px 0px 1px rgb(0, 0, 0);
 }
 
 .header .container .navegation .nav a {
   text-decoration: none;
-  color: #2c4755;
-  font-size: 20px;
+  /* color: #2c4755; */
+  color: white;
+  font-size: 15px;
   padding: 0px 10px;
+
 }
 
 .header .container .navegation .nav a:hover {
-  border-bottom: 2px  solid #2c4755;
-  box-shadow: 2px 2px 2px #2c4755;
+  /* border-bottom: 2px solid #2c4755;
+  box-shadow: 2px 2px 2px #2c4755; */
 
+  background-color: #FF7F50;
 }
 
-.header .container .navegation .nav .active {
-}
-
-.header .container .navegation .nav a:link {
-}
-
-.header .container .navegation .nav .a:checked {
-}
 
 .header .container .links {
   display: none;
 }
 
-@media(max-width:767px) {
 
+@media(max-width:500px) {
   .header .container .navegation .nav {
     display: none;
   }
@@ -50,8 +113,15 @@
   .header .container .links {
     display: block;
   }
+    .logoSmallArea {
+      display: block;
+    }
 }
-
+@media(min-width:500px){
+  .logoSmallArea{
+    display: none;
+  }
+}
 
 
 .header .container .navegation {
@@ -60,7 +130,8 @@
 
 .header .links {
   position: relative;
-
+  cursor: pointer;
+  background-color: #2c4755;
 }
 
 .header .links .icons {
@@ -68,10 +139,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
+  position: absolute;
+  right: 0;
+  bottom: -30px;
 }
 
 .header .links .icons span {
-  background-color: #222;
+  background-color: white;
   height: 2px;
   margin-bottom: 5px;
 }
@@ -80,6 +154,17 @@
   display: block;
 }
 
+.header .links:focus:not(:focus-visible) ul {
+  display: block;
+}
+
+
+.header .links .icons:hover {
+  text-decoration: none;
+  color: red;
+  outline: 0;
+  box-shadow: 0 0 0 var(--bs-navbar-toggler-focus-width);
+}
 
 .header .links .icons span:first-child {
   width: 100%;
@@ -94,7 +179,7 @@
   width: 100%;
 }
 
-.header .links:hover .icons span:nth-child(2) {
+.header .links .icons:hover span:nth-child(2) {
   width: 100%;
 }
 
@@ -106,7 +191,7 @@
   min-width: 200px;
   position: absolute;
   right: 0;
-  top: 30px;
+  top: 44px;
   display: none;
   z-index: 1;
 }
@@ -138,3 +223,12 @@
 }
 
 /* end header  */
+
+.smallArea{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: center;
+  background-color: #2c4755;
+}

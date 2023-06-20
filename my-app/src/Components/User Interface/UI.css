@@ -1,0 +1,230 @@
+.UI-container a {
+    text-decoration: none;
+    color: initial;
+}
+
+
+.UI-container ::selection {
+    background-color: #2C4755;
+    color: #FFF;
+}
+
+.UI-container {
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.UI-container {
+    width: 100%;
+    background-color: #FFF;
+}
+
+.UI-container .menu {
+    height: 100vh;
+    width: 30%;
+    font-size: 1.3rem;
+    background: #ECECEC;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px 30px;
+    margin-right: 70px;
+
+
+}
+
+.UI-container .content {
+    width: 70%;
+    padding: 30px 30px 30px 0;
+}
+
+.UI-container .menu .nav-link {
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #000;
+    font-weight: 600;
+    text-align: left;
+    width: 180px;
+    position: relative;
+
+}
+
+.UI-container .menu .nav-link::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 4px;
+    height: 0%;
+    top: 50%;
+    left: -8px;
+    background-color: #2C4755;
+    transition-property: height, top;
+    transition-timing-function: ease;
+    transition-duration: 0.35s;
+}
+
+.UI-container .menu .nav-link.active {
+    font-weight: 900;
+    color: #FFF;
+    padding: 5px;
+    color: #2C4755;
+}
+
+.UI-container .menu .nav-link.active::before {
+    top: 0;
+    height: 100%;
+
+}
+
+
+
+.UI-container .menu .nav-link>i {
+    margin-right: 10px;
+    color: #000;
+}
+
+
+@media screen and (max-width:940px) {
+    .UI-container .menu {
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+    }
+
+    .UI-container .menu .nav-link {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        text-align: left;
+        font-size: 16px;
+    }
+
+    .UI-container .menu .nav-link>i {
+        font-size: 16px !important;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .content {
+        padding-left: 50px;
+        width: 100%;
+        padding-top: 200px;
+        padding-bottom: 50px;
+    }
+
+
+    .UI-container .menu {
+        flex-direction: column;
+
+    }
+
+}
+
+@media (max-width:580px) {
+    .UI-container {
+        flex-direction: column;
+    }
+
+    .UI-container .menu {
+        width: 100%;
+        height: auto;
+        margin: 0;
+
+    }
+
+    .UI-container .content {
+        padding: 25px;
+    }
+
+
+}
+
+.profile-content,
+.contracts-content {
+    display: none;
+}
+
+
+
+.UI-container form {
+    width: 550px;
+}
+
+.UI-container form * {
+    font-weight: 900;
+}
+
+.UI-container form label {
+    font-size: 18px;
+    color: #000;
+}
+
+.UI-container form .form-control,
+.UI-container form .form-control:focus {
+    border-color: transparent;
+    border-bottom-color: #bebcc1;
+    box-shadow: none;
+
+}
+
+.UI-container form input.form-control {
+    margin-bottom: 15px;
+    font-size: 21px;
+    font-weight: 600;
+    color: rgb(5, 112, 5);
+    letter-spacing: 3px;
+}
+
+.UI-container form .btn {
+    border-radius: 0px;
+    border-color: transparent;
+    margin: 30px 15px;
+}
+
+.UI-container .btn.btn-default {
+    background: #ebebeb;
+    color: #8f9096;
+}
+
+.UI-container .btn.btn-primary {
+    background: #000000;
+    color: white;
+}
+
+
+.UI-container form {
+    width: 100%;
+    margin: auto;
+}
+
+
+
+
+.contracts .contract {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(236, 236, 236);
+    border: 2px solid #2C4755;
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 10px;
+}
+
+
+.UI-container img {
+    width: 45px;
+    height: 60px;
+    margin: 10px 20px;
+}
+
+.UI-container .show {
+    display: block;
+}

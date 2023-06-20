@@ -1,0 +1,135 @@
+{
+  "customerSignUp": [
+    {
+      "username": "tt",
+      "email": "2482000amr@gmail.com",
+      "password": "666666666",
+      "repassword": "666666666",
+      "job": "tt",
+      "address": "yt",
+      "phone": "77777777777",
+      "idnumber": "77777777777777",
+      "nationality": "Cuit",
+      "governorate": "Mansora",
+      "id": 11
+    },
+    {
+      "username": "s20191407",
+      "momname": "ffffffff",
+      "email": "khattabkh3@gmail.com",
+      "password": "12345678",
+      "address": "hgyvfdi",
+      "phone": "00000000000",
+      "idnumber": "00000000000000",
+      "fnnumber": "RT1223333",
+      "nationality": "Algeria",
+      "religon": "Christian",
+      "governorate": "Cairo",
+      "id": 29
+    },
+    {
+      "file": {},
+      "id": "lKj0JKm"
+    },
+    {
+      "file": {},
+      "id": "UwJ3bBA"
+    },
+    {
+      "file": {},
+      "id": "3akNnbB"
+    },
+    {
+      "id": 30
+    },
+    {
+      "file": [],
+      "id": 31
+    },
+    {
+      "id": 32
+    },
+    {
+      "id": 33
+    },
+    {
+      "id": 34
+    },
+    {
+      "id": 35
+    },
+    {
+      "formData": {},
+      "id": 46
+    },
+    {
+      "id": 47
+    },
+    {
+      "formData": {},
+      "id": 48
+    },
+    {
+      "formData": {},
+      "id": 49
+    }
+  ],
+  "customerSignIn": [
+    {
+      "email": "amr@gmail.com",
+      "password": "2222222111",
+      "id": 1
+    },
+    {
+      "email": "amr@gmail.com",
+      "password": "2222222111",
+      "id": 2
+    },
+    {
+      "email": "amr@gmail.com",
+      "password": "2222222111",
+      "id": 3
+    },
+    {
+      "email": "amr@gmail.com",
+      "password": "2222222111",
+      "id": 4
+    },
+    {
+      "email": "amr11w00wbea@gmail.com",
+      "password": "11111111",
+      "id": 5
+    },
+    {
+      "email": "amr11w00wbea@gmail.com",
+      "password": "11111111",
+      "id": 6
+    }
+  ],
+  "DocApis": [
+    {
+      "id": 0,
+      "type": "Buildings"
+    },
+    {
+      "id": 1,
+      "type": "Veichles"
+    },
+    {
+      "id": 2,
+      "type": "Buildings"
+    },
+    {
+      "id": 3,
+      "type": "Veichles"
+    },
+    {
+      "id": 4,
+      "type": "Buildings"
+    },
+    {
+      "id": 5,
+      "type": "Veichles"
+    }
+  ]
+}

@@ -1,57 +1,87 @@
+.SignUp .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF;
+  margin-bottom:40px;
+  margin-top:40px;
 
-.container{
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
 }
-.SignUp .container form{
- display: grid;
- grid-template-columns: 1fr 1fr;
- gap: 10px;
- border: 1px solid #FF7F50;
- border-right: 3px solid #FF7F50;
- width:calc(100% - 5px);
- justify-content: space-between;
+
+.SignUp .container form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  border: 1px solid #FF7F50;
+  border-right: 3px solid #FF7F50;
+  width: calc(100% - 5px);
+  justify-content: space-between;
 }
-.SignUp .container form div label{
- display: block;
+
+.SignUp .container form div label {
+  display: block;
 }
-.SignUp .container  form div{
- margin: 20px;
- width:80%;
+
+.SignUp .container form div {
+  margin: 20px;
+  width: 80%;
 }
-.SignUp .container  form div input ,.SignUp .container form div select{
-width: 100%;
-height: 40px;
-outline: none;
+
+.SignUp .container form div input,
+.SignUp .container form div select {
+  width: 100%;
+  height: 40px;
+  outline: none;
 }
-@media(width<800px){
-/* .SignUp .container   form div {
+
+@media(width<800px) {
+  /* .SignUp .container   form div {
    margin: 20px;
    width: 250px;
   } */
 }
-@media(width<600px){
-.SignUp .container  form {
-   display: grid;
-   grid-template-columns: 1fr ;
-   gap: 10px;
-   width: 100%;
-   justify-content: center;
+
+@media(width<600px) {
+  .SignUp .container form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
   }
 
-    /* .SignUp .container form div {
-     margin: 20px;
-     width: 100%;
-    } */
 }
 
-.SignUp .container form div select{
- outline: none;
- background-color: #FFEBCD;
+.SignUp .container form div select {
+  outline: none;
+  background-color: #FFEBCD;
 }
 
-input[type=submit]{
- background-color: #FF7F50;
+input[type=submit] {
+  background-color: #FF7F50;
+}
+
+.passInput {
+  position: relative;
+}
+
+.showPass {
+    position: absolute;
+      right: 0px;
+      /* bottom: 0px; */
+      /* width: 40px; */
+      /* height: 40px; */
+      padding: 8px;
+      border: none;
+      background-color: #FF7F50;
+      color: #2c4755ed;
+}
+
+.errorMessage {
+  margin: 10px 0;
+  color: #FF7F50;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 50px;
+  background-color: #FFEBCD;
 }
